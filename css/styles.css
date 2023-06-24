@@ -91,7 +91,7 @@ min-width: 320px;
   }
 @media screen and (min-width: 768px) {
   .header{
- padding: 16px;
+ padding: 0;
 
 }}
 .logo {
@@ -127,7 +127,10 @@ display: block;
 }
 
 @media screen and (min-width: 768px){
-  .menu {display: flex;}
+  .menu {display: flex;
+  
+    padding: 24px 0;
+  }
 }
 .address-list {
   display: none;
@@ -244,6 +247,7 @@ font-style: normal;
 @media screen and (min-width: 1158px){
 
   .menu {
+ 
     gap: 40px;
   }}
   @media screen and (min-width: 768px){
@@ -275,7 +279,7 @@ font-style: normal;
     content: "";
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: -4px;
     height: 4px;
     display: block;
     width: 100%;
