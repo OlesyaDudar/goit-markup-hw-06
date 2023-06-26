@@ -3,7 +3,7 @@
   --text-color: #434455;
   --primary-brand: #4d5ae5;
   --pressed-state: #404bbf;
-  --dark: rgba(46, 47, 66, 1);
+  --dark: #2e2f42;
   --success: #31d0aa;
   --subtle-text: #8e8f99;
   --accent: #e7e9fc;
@@ -327,7 +327,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: #2e2f42;
+    fill: var(--dark);
   }
 }
 .visually-hidden {
@@ -344,12 +344,13 @@ body {
 }
 
 .container-preference {
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 
 @media screen and (min-width: 1158px) {
   .container-preference {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 12px;
   }
 }
 .preference-list {
@@ -382,11 +383,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--dark);
   margin-bottom: 8px;
-  text-align: center;
   font-size: 36px;
   line-height: calc(40 / 36);
   letter-spacing: 0.72px;
-  color: #2e2f42;
+  color: var(--dark) #2e2f42;
 }
 @media screen and (min-width: 1158px) {
   .preference-name {
@@ -399,9 +399,9 @@ body {
 .preference-text {
   font-size: 16px;
   letter-spacing: 0.02em;
-  color: #434455;
-  font-weight: 500;
-  line-height: calc(24 / 16);
+  color: var(--text-color);
+
+
   letter-spacing: 0.32px;
 }
 
@@ -786,6 +786,8 @@ body {
   margin-bottom: 72px;
 }
 
+.footer-top{ margin-bottom: 72px;}
+
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
@@ -838,7 +840,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 16px;
-  margin-bottom: 72px;
+ 
   align-items: center;
   justify-content: center;
 }
@@ -932,6 +934,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .footer-container{max-width: 584px;}
   .footer-form-subscribe {
     display: flex;
   }
@@ -941,11 +944,12 @@ body {
   }
   .footer-top {
     display: flex;
-    gap: 24px;
+    
     margin-bottom: 72px;
   }
   .footer-container-logo {
-    margin: 0;
+    margin-bottom: 0;
+    margin-right: 24px;
     text-align: left;
   }
   .footer-contact-icon {
@@ -970,9 +974,11 @@ body {
     flex-direction: row;
     align-items: center;
     align-items: baseline;
+    max-width: 1158px;
   }
 
-  .footer-top {margin-bottom: 0;}
+  .footer-top {
+    margin-bottom: 0;}
   .footer-container-logo {
     margin-right: 120px;
   }
