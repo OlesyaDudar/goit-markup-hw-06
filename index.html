@@ -250,27 +250,13 @@
           <ul class="list team-list">
             <li class="team-card">
              
-      <img class="foto-desk"
-  srcset="./images/mark.jpg.jpg 1x, ./images/mark2.jpg 2x"
-  src="./images/mark.jpg"
-  alt="Foto Mark Guerrero"
-  width="264"
-  height="260"
-/>
-<img class="foto-tab"
-srcset="./images/mark-tab1.jpg 1x, ./images/mark-tab2.jpg 2x"
-src="./images/mark-tab1.jpg.jpg"
-alt="Foto Mark Guerrero"
-width="264"
-height="260"
-/>
-<img class="foto-mob"
-srcset="./images/mark-mob1.jpg 1x, ./images/mark-mob2.jpg 2x"
-src="./images/mark-mob1.jpg"
-alt="Foto Mark Guerrero"
-width="264"
-height="260"
-/>
+              <picture>
+                <source media="(max-width: 767px)" srcset="images/mark-mob1.jpg 1x, images/mark-mob2.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/mark-tab1.jpg 1x, images/mark-tab2.jpg 2x">
+                <source media="(min-width: 1158px)" srcset="./images/mark.jpg 1x, ./images/mark2.jpg">
+                <img src="./images/mark.jpg" alt="Foto Mark Guerrero" width="264"
+                height="260">
+              </picture>
 
               <!-- <img
                 src="./images/mark.jpg"
