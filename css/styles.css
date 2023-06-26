@@ -660,7 +660,18 @@ body {
   align-items: center;
 }
 
-@media screen and (min-width: 11588px) {
+.foto-desk, .foto-tab {display: none;}
+
+@media screen and (min-width: 768px){
+  .foto-mob {display: none;}
+  .foto-tab{display: block;}
+}
+@media screen and (min-width: 1158px){
+.foto-tab {display: none;}
+  .foto-desk{display: block;}
+}
+
+@media screen and (min-width: 1158px) {
   .team {
     padding: 120px 0;
   }
