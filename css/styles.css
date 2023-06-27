@@ -1029,21 +1029,69 @@ text-align: center;
   }
 }
 
-.portfolio-foto-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--dark);
-  margin-bottom: 8px;
+
+
+.container-porfolio {
+  padding: 48px 0;}
+
+@media screen and (min-width: 768px){
+.container-porfolio {
+  padding: 96px 0 120px 0;
+}}
+
+
+.portfolio-menu{
+ width: 287px;
+  display: flex;
+  align-content: flex-start;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  gap: 16px 24px;
 }
 
-.portfolio-project-style {
+ @media screen and (min-width: 768px){
+ .portfolio-menu {
+  display: flex;
+
+ flex-wrap:initial;
+  margin: 0 auto;
+  margin-bottom: 64px;
+  justify-content: center;
+  width: 100%;
+}
+} 
+@media screen and (min-width: 1158px){
+ .portfolio-menu {
+margin-bottom: 72px;}}
+
+.portfolio-nav-button {
+  font-family: "Roboto", sans-serif;
+  background: var(--light);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+ @media screen and (min-width: 768px){
+  .portfolio-nav-button {
+     padding: 12px 24px;
+   
+  } 
+} 
 
 .portfolio-nav-button:hover {
   color: var(--main-color);
@@ -1061,43 +1109,21 @@ text-align: center;
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-nav-button {
-  font-family: "Roboto", sans-serif;
-  background: var(--light);
+
+.portfolio-foto-name {
   font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.portfolio-project-style {
   font-size: 16px;
   line-height: 1.5;
-  cursor: pointer;
-  letter-spacing: 0.04em;
-  color: var(--primary-brand);
-  border: 1px solid var(--accent);
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 24px;
-  box-sizing: border-box;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-menu {
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 72px;
-  justify-content: center;
-}
-
-.portfolio-content {
-  flex-wrap: wrap;
-  gap: 48px 24px;
-}
-
-.portfolio-content-card {
-  width: calc((100% - 48px) / 3);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.02em;
+  color: var(--text-color);
 }
 
 .portolio-card-text {
@@ -1107,9 +1133,45 @@ text-align: center;
   border-top: none;
 }
 
-.container-porfolio {
-  padding: 96px 0 120px 0;
+.portfolio-content{display: flex;
+  flex-direction: column;
+gap: 48px;}
+
+ @media screen and (min-width: 768px){
+.portfolio-content {
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 72px 24px;
+}} 
+
+@media screen and (min-width: 1158px){
+  .portfolio-content {
+
+    gap: 48px 24px;
+  }}
+  .portfolio-content-card {
+    width: 100%;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media screen and (min-width: 768px){
+  .portfolio-content-card {
+    width: calc((100% - 24px) / 2);
+  }}
+
+  @media screen and (min-width: 1158px){
+.portfolio-content-card {
+  width: calc((100% - 48px) / 3);
+  
+}}
+
+.portfolio-img{
+  width: 100%;
+  height: 100%;
+  
 }
+
+
 
 .portfolio-img-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -1124,6 +1186,7 @@ text-align: center;
 .overlay {
   position: relative;
   overflow: hidden;
+  max-width: 396px;
 }
 
 .text-overlay {
