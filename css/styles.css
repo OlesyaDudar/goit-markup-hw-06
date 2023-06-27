@@ -396,7 +396,13 @@ body {
   font-size: 36px;
   line-height: calc(40 / 36);
   letter-spacing: 0.72px;
-  color: var(--dark) #2e2f42;
+text-align: center;
+
+}
+@media screen and (min-width: 768px) {
+  .preference-name{
+    text-align: left;
+  }
 }
 @media screen and (min-width: 1158px) {
   .preference-name {
@@ -410,15 +416,8 @@ body {
   font-size: 16px;
   letter-spacing: 0.02em;
   color: var(--text-color);
-
-  letter-spacing: 0.32px;
-}
-
-@media screen and (min-width: 1158px) {
-  .preference-text {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-  }
+  line-height: 1.5;
+ 
 }
 
 .service {
